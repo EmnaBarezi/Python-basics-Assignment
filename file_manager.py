@@ -1,4 +1,3 @@
-
 FILE_NAME = "user_message.txt"
 
 def save_message(message):
