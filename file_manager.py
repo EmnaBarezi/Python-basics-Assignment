@@ -2,13 +2,13 @@
 FILE_NAME = "user_message.txt"
 
 def save_message(message):
-    """Write message to a text file and print confirmation, handling errors gracefully."""
+    """Write message to a text file and then print for confirmation, handling errors very well."""
     try:
         with open(FILE_NAME, "w", encoding="utf-8") as f:
             f.write(message + "\n")
-        print("Message saved successfully.")
+        print("Message saving was a success")
     except OSError as e:
-        print(f"Error saving message: {e}")
+        print(f"Error in saving message: {e}")
 
 def read_message():
     """Read the saved message and print it, handling errors gracefully."""
@@ -18,6 +18,6 @@ def read_message():
             content = f.read().rstrip("\n")
         print(content)
     except FileNotFoundError:
-        print("No saved message found. Please save a message first.")
+        print("message not found. Please save it first.")
     except OSError as e:
         print(f"Error reading message: {e}")
