@@ -1,4 +1,4 @@
-
+#The program will take the user's name and age and validate the inputs and convert them into binary format and display the message
 def validate_input(user_input):
     """Return True if user_input is a non-empty string after stripping whitespace."""
     return isinstance(user_input, str) and user_input.strip() != ""
@@ -8,11 +8,11 @@ def convert_to_binary(text):
     Convert a string to 8-bit space-separated ASCII binary.
     If the text represents a number (e.g., an age), convert it to int and return Python's binary form using bin().
     """
-    # If it's already an int, return bin directly
+    # If the value is already an integer, return its binary form
     if isinstance(text, int):
         return bin(text)
 
-    # Try to treat it as a number first (for ages like "23")
+    # Attempt to convert numeric strings (for ages like "23") to binary
     try:
         number = int(text)
         return bin(number)
