@@ -6,17 +6,17 @@ from greetings import show_intro, show_exit_message
 def get_user_info():
     # Ask for name until valid
     while True:
-        name = input("Enter your name: ").strip()
+        name = input("Please Enter your name: ").strip()
         if validate_input(name):
             break
-        print("Invalid name! Please try again.")
+        print("The name you entered is invalid! Please try again.")
 
     # Ask for age until it's numeric
     while True:
-        age_str = input("Enter your age: ").strip()
+        age_str = input(" Please Enter your age: ").strip()
         if age_str.isdigit():
             break
-        print("Invalid age! Please enter a number.")
+        print("The age you entered is invalid! Please enter a number.")
 
     age = int(age_str)
     return name, age

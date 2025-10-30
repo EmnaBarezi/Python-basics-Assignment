@@ -1,3 +1,3 @@
-Hello Emna, you are 19 years old!
-Name in binary: 01000101 01101101 01101110 01100001
-Age in binary: 0b10011
+Hello teta, you are 29 years old!
+Name in binary: 01110100 01100101 01110100 01100001
+Age in binary: 0b11101
